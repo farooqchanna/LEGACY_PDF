@@ -16,25 +16,21 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      # 1. SDK Tools (sdkmanager 16.0+) require JDK 17 to install packages & accept licenses
+      # 1. Use Java 17 for Android SDK tools (sdkmanager requires Java 17+)
       - name: Set up Java 17 for Android SDK tools
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
+      # Use the runner's preinstalled sdkmanager directly (avoids broken third-party actions)
       - name: Accept Licenses & Install Android 28 Tools
-        env:
-          SKIP_JDK_VERSION_CHECK: true
         run: |
-          yes | sdkmanager --licenses || true
-          sdkmanager "platforms;android-28" "build-tools;28.0.3"
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
+          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-28" "build-tools;28.0.3"
 
-      # 2. Switch to Java 8 for Gradle & AGP 3.4.2 (older AGP crashes under Java 17)
-      - name: Set up Java 8 for Gradle 5 & AGP 3.4.2
+      # 2. Switch to Java 8 for Gradle 5.1.1 & AGP 3.4.2
+      - name: Set up Java 8 for Gradle
         uses: actions/setup-java@v4
         with:
           distribution: temurin
