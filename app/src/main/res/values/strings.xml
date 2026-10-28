@@ -2,7 +2,7 @@
 <resources>
 
     <!-- App Name -->
-    <string name="app_name">LitePDF Reader</string>
+    <string name="app_name">Legacy Reader</string>
 
     <!-- Activity Titles -->
     <string name="title_viewer">PDF Viewer</string>

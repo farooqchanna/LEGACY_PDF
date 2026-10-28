@@ -1,6 +1,6 @@
 # 📘 PDF Reader for Old Android — Complete Blueprint
 
-> **Project Name:** LitePDF Reader  
+> **Project Name:** Legacy Reader  
 > **Status:** ✅ Core Implementation Complete — Steps 1 through 16 Complete!  
 
 ---

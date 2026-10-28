@@ -117,7 +117,7 @@
             android:layout_gravity="center_horizontal"
             android:textColor="@color/text_secondary"
             android:textSize="@dimen/text_secondary"
-            android:text="LitePDF Reader v1.0.0" />
+            android:text="Legacy Reader v1.0.0" />
 
     </LinearLayout>
 
