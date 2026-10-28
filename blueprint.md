@@ -136,7 +136,7 @@ com.litepdf.reader/
 ### Step 1: Project Setup ✅ COMPLETE
 - [x] Create new Android project with package `com.litepdf.reader`
 - [x] Set `minSdkVersion 14`, `targetSdkVersion 22`, `compileSdkVersion 28`
-- [x] Configure `build.gradle` with all dependencies
+- [x] Configure `build.gradle` with AGP 4.2.2 & Gradle 6.7.1
 - [x] Add AndroidPdfViewer library: `com.github.barteksc:android-pdf-viewer:2.8.2`
 - [x] Add RecyclerView support library: `com.android.support:recyclerview-v7:28.0.0`
 - [x] Add AppCompat: `com.android.support:appcompat-v7:28.0.0`
