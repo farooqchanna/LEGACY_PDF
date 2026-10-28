@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Sort Options Array -->
+    <string-array name="sort_options">
+        <item>Name (A → Z)</item>
+        <item>Name (Z → A)</item>
+        <item>Date (Newest first)</item>
+        <item>Date (Oldest first)</item>
+        <item>Size (Largest first)</item>
+        <item>Size (Smallest first)</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher icon for LitePDF Reader -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Red rounded background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E53935" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <!-- White paper page outline -->
+    <item
+        android:top="10dp"
+        android:bottom="10dp"
+        android:left="14dp"
+        android:right="14dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <!-- Red stripe at bottom of white page -->
+    <item
+        android:top="36dp"
+        android:bottom="14dp"
+        android:left="18dp"
+        android:right="18dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#E53935" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+</layer-list>

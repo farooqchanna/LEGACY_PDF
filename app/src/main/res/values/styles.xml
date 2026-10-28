@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Application Theme: Holo Light with custom action bar -->
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/AppActionBar</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:colorActivatedHighlight">@color/accent</item>
+    </style>
+
+    <!-- Custom Action Bar Style -->
+    <style name="AppActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/action_bar_bg</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+    </style>
+
+    <!-- Action Bar Title Text -->
+    <style name="ActionBarTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/action_bar_text</item>
+    </style>
+
+    <!-- Dark Viewer Theme (for dark mode) -->
+    <style name="AppTheme.DarkViewer">
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:actionBarStyle">@style/DarkActionBar</item>
+    </style>
+
+    <style name="DarkActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/dark_toolbar</item>
+    </style>
+
+    <!-- Card Style for PDF items -->
+    <style name="PdfCardStyle">
+        <item name="android:background">@color/card_background</item>
+        <item name="android:padding">@dimen/card_padding</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextPrimary">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_primary</item>
+    </style>
+
+    <style name="TextSecondary">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_secondary</item>
+    </style>
+
+    <style name="TextSectionHeader">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_section_header</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/section_padding</item>
+        <item name="android:paddingTop">@dimen/section_padding</item>
+        <item name="android:paddingBottom">@dimen/section_padding_small</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="FolderButton">
+        <item name="android:background">@color/card_background</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">@dimen/text_primary</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <!-- Viewer Overlay Bar Style -->
+    <style name="ViewerOverlayBar">
+        <item name="android:background">@color/semi_transparent_black</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- Dialog Theme -->
+    <style name="AppDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@color/card_background</item>
+    </style>
+
+</resources>

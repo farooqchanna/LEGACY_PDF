@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Current Path Breadcrumb -->
+    <TextView
+        android:id="@+id/txt_current_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/primary_dark"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_secondary"
+        android:singleLine="true"
+        android:ellipsize="start" />
+
+    <!-- Folder List -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_folders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txt_empty_folders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="No subfolders found"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_primary"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Bottom Selection Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/card_background">
+
+        <Button
+            android:id="@+id/btn_select_this_folder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_select"
+            android:textColor="#FFFFFF"
+            android:background="@color/accent"
+            android:textSize="@dimen/text_primary" />
+    </LinearLayout>
+
+</LinearLayout>

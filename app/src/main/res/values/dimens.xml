@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Sizes -->
+    <dimen name="text_primary">14sp</dimen>
+    <dimen name="text_secondary">12sp</dimen>
+    <dimen name="text_section_header">16sp</dimen>
+    <dimen name="text_page_indicator">14sp</dimen>
+    <dimen name="text_file_name_grid">12sp</dimen>
+
+    <!-- Thumbnail Dimensions -->
+    <dimen name="thumbnail_width">120dp</dimen>
+    <dimen name="thumbnail_height">160dp</dimen>
+    <dimen name="thumbnail_width_recent">100dp</dimen>
+    <dimen name="thumbnail_height_recent">130dp</dimen>
+    <dimen name="thumbnail_list_size">48dp</dimen>
+
+    <!-- Grid -->
+    <dimen name="grid_spacing">8dp</dimen>
+    <dimen name="grid_item_margin">4dp</dimen>
+
+    <!-- Padding & Margins -->
+    <dimen name="card_padding">8dp</dimen>
+    <dimen name="section_padding">16dp</dimen>
+    <dimen name="section_padding_small">8dp</dimen>
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="list_item_padding">12dp</dimen>
+    <dimen name="screen_margin">8dp</dimen>
+
+    <!-- Viewer -->
+    <dimen name="viewer_bar_height">48dp</dimen>
+    <dimen name="viewer_slider_margin">16dp</dimen>
+
+    <!-- Folder Picker -->
+    <dimen name="folder_indent">24dp</dimen>
+    <dimen name="folder_icon_size">32dp</dimen>
+
+    <!-- Search Bar -->
+    <dimen name="search_height">48dp</dimen>
+
+</resources>

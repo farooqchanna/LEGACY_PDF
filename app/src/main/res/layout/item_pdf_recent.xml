@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/thumbnail_width_recent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:padding="4dp"
+    android:background="@drawable/bg_pdf_thumbnail"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/img_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thumbnail_height_recent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_pdf_placeholder"
+        android:contentDescription="@string/section_recent" />
+
+    <TextView
+        android:id="@+id/txt_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_secondary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_last_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp" />
+
+</LinearLayout>

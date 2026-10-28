@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">LitePDF Reader</string>
+
+    <!-- Activity Titles -->
+    <string name="title_viewer">PDF Viewer</string>
+    <string name="title_folder_picker">Select Folder</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Home Screen -->
+    <string name="section_recent">Recent Files</string>
+    <string name="section_all_pdfs">All PDFs</string>
+    <string name="btn_select_folder">Select Folder</string>
+    <string name="search_hint">Search PDF files…</string>
+    <string name="file_count_format">%d files</string>
+
+    <!-- Empty States -->
+    <string name="empty_no_pdfs">No PDF files found on this device</string>
+    <string name="empty_no_recent">No recent files</string>
+    <string name="empty_no_results">No results found</string>
+    <string name="empty_no_bookmarks">No bookmarks yet</string>
+    <string name="empty_no_toc">This PDF has no table of contents</string>
+    <string name="empty_folder_no_pdfs">No PDF files in this folder</string>
+
+    <!-- Viewer -->
+    <string name="page_indicator_format">Page %1$d / %2$d</string>
+    <string name="go_to_page">Go to Page</string>
+    <string name="go_to_page_hint">Enter page number (1–%d)</string>
+    <string name="btn_go">Go</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="scroll_mode_vertical">Vertical Scroll</string>
+    <string name="scroll_mode_page">Page Swipe</string>
+    <string name="dark_mode_on">Dark Mode</string>
+    <string name="dark_mode_off">Light Mode</string>
+    <string name="bookmark_added">Bookmark added</string>
+    <string name="bookmark_removed">Bookmark removed</string>
+    <string name="bookmarks_list">Bookmarks</string>
+    <string name="table_of_contents">Table of Contents</string>
+    <string name="file_info">File Info</string>
+
+    <!-- File Info Dialog -->
+    <string name="info_name">Name: %s</string>
+    <string name="info_path">Path: %s</string>
+    <string name="info_size">Size: %s</string>
+    <string name="info_pages">Pages: %d</string>
+    <string name="info_modified">Modified: %s</string>
+
+    <!-- Sort Options -->
+    <string name="sort_title">Sort By</string>
+    <string name="sort_name_asc">Name (A → Z)</string>
+    <string name="sort_name_desc">Name (Z → A)</string>
+    <string name="sort_date_newest">Date (Newest first)</string>
+    <string name="sort_date_oldest">Date (Oldest first)</string>
+    <string name="sort_size_largest">Size (Largest first)</string>
+    <string name="sort_size_smallest">Size (Smallest first)</string>
+
+    <!-- View Mode -->
+    <string name="view_grid">Grid View</string>
+    <string name="view_list">List View</string>
+
+    <!-- Settings -->
+    <string name="settings_default_view">Default View Mode</string>
+    <string name="settings_default_scroll">Default Scroll Mode</string>
+    <string name="settings_clear_recent">Clear Recent Files</string>
+    <string name="settings_clear_cache">Clear Thumbnail Cache</string>
+    <string name="settings_version">App Version</string>
+    <string name="settings_clear_confirm">Are you sure? This cannot be undone.</string>
+    <string name="settings_cleared">Cleared successfully</string>
+
+    <!-- Errors -->
+    <string name="error_open_pdf">Unable to open this PDF file</string>
+    <string name="error_file_not_found">File not found or has been deleted</string>
+    <string name="error_permission_needed">Storage permission is required to read PDF files</string>
+    <string name="error_corrupted">This PDF file appears to be corrupted</string>
+
+    <!-- General -->
+    <string name="btn_ok">OK</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_select">Select This Folder</string>
+    <string name="loading">Loading…</string>
+    <string name="scanning">Scanning for PDF files…</string>
+
+</resources>

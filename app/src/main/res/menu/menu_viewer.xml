@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_dark_mode"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/dark_mode_on"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_toc"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/table_of_contents"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_bookmark"
+        android:icon="@android:drawable/star_off"
+        android:title="@string/bookmarks_list"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_scroll_mode"
+        android:title="@string/scroll_mode_page"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_go_to_page"
+        android:title="@string/go_to_page"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_view_bookmarks"
+        android:title="@string/bookmarks_list"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_file_info"
+        android:title="@string/file_info"
+        app:showAsAction="never" />
+
+</menu>
