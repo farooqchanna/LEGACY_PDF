@@ -2,6 +2,7 @@
 
 # Keep PDF viewer classes
 -keep class com.github.barteksc.pdfviewer.** { *; }
+-keep class com.github.mhiew.** { *; }
 -keep class com.shockwave.pdfium.** { *; }
 
 # Keep our model classes (used with SQLite)

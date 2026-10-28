@@ -79,7 +79,7 @@
 
 | Dependency | Purpose | License | Notes |
 |---|---|---|---|
-| **AndroidPdfViewer (barteksc)** | PDF rendering using PDFium | Apache 2.0 ✅ | Supports API 14+, private code safe |
+| **AndroidPdfViewer (mhiew fork on Maven Central)** | PDF rendering using PDFium | Apache 2.0 ✅ | Supports API 14+, private code safe |
 | **PdfiumAndroid** | Native PDF engine (bundled with above) | Apache 2.0 ✅ | Fast, low memory |
 | **SQLite** | Local database for bookmarks, recents | Built-in | No extra dependency |
 | **Android Support Library v7** | Backward compatibility | Apache 2.0 ✅ | For ActionBar, RecyclerView etc. |
