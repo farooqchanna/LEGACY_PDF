@@ -131,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     private void setupAllPdfsRecycler() {
+        recyclerAllPdfs.setNestedScrollingEnabled(false);
         gridAdapter = new PdfGridAdapter(this, displayedPdfsList);
         gridAdapter.setOnPdfClickListener(this);
 

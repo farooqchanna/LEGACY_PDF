@@ -1,31 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base Application Theme: Holo Light with custom action bar -->
-    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
-        <item name="android:actionBarStyle">@style/AppActionBar</item>
+    <!-- Base Application Theme: AppCompat Light (Guarantees compatibility with AppCompatActivity on API 14+) -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
         <item name="android:windowBackground">@color/background</item>
-        <item name="android:colorActivatedHighlight">@color/accent</item>
+        <item name="actionBarStyle">@style/AppActionBar</item>
+        <item name="android:actionBarStyle">@style/AppActionBar</item>
     </style>
 
     <!-- Custom Action Bar Style -->
-    <style name="AppActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <style name="AppActionBar" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/action_bar_bg</item>
         <item name="android:background">@color/action_bar_bg</item>
+        <item name="titleTextStyle">@style/ActionBarTitle</item>
         <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+        <item name="elevation">0dp</item>
     </style>
 
     <!-- Action Bar Title Text -->
-    <style name="ActionBarTitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <style name="ActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/action_bar_text</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
-    <!-- Dark Viewer Theme (for dark mode) -->
-    <style name="AppTheme.DarkViewer">
+    <!-- Dark Viewer Theme (for dark mode in reader) -->
+    <style name="AppTheme.DarkViewer" parent="Theme.AppCompat">
         <item name="android:windowBackground">@color/dark_background</item>
+        <item name="actionBarStyle">@style/DarkActionBar</item>
         <item name="android:actionBarStyle">@style/DarkActionBar</item>
     </style>
 
-    <style name="DarkActionBar" parent="@android:style/Widget.Holo.ActionBar">
+    <style name="DarkActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/dark_toolbar</item>
         <item name="android:background">@color/dark_toolbar</item>
     </style>
 
@@ -71,7 +80,7 @@
     </style>
 
     <!-- Dialog Theme -->
-    <style name="AppDialogTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:windowBackground">@color/card_background</item>
     </style>
 

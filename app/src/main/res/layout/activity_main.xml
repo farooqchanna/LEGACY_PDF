@@ -129,8 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clipToPadding="false"
-                android:padding="4dp"
-                android:nestedScrollingEnabled="false" />
+                android:padding="4dp" />
 
             <!-- Empty State View -->
             <LinearLayout
