@@ -23,11 +23,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      # Install Android 28 platform and build-tools
+      # Install Android 28 platform and build-tools 30.0.2 (required by AGP 4.2.2)
       - name: Accept Licenses & Install Android 28 Tools
         run: |
           yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
-          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-28" "build-tools;28.0.3"
+          $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platforms;android-28" "build-tools;30.0.2"
 
       # Remove preinstalled NDK (NDK 27 lacks legacy 'platforms' directory that older AGP warns about)
       - name: Remove unused NDK
